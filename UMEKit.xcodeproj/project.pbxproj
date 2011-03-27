@@ -1024,7 +1024,6 @@
 				ARCHS = (
 					i386,
 					x86_64,
-					ppc,
 				);
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1056,7 +1055,6 @@
 				ARCHS = (
 					i386,
 					x86_64,
-					ppc,
 				);
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
