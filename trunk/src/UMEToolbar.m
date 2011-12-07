@@ -101,6 +101,11 @@
 #pragma mark -
 #pragma mark Public
 
+- (NSArray *)items {
+    return [[items copy] autorelease];
+}
+
+
 - (void)setItems:(NSArray *)a animated:(BOOL)animated {
     self.items = a;
 }
@@ -113,7 +118,7 @@
         }
         
         [items autorelease];
-        items = [a retain];
+        items = [a mutableCopy];
         
         self.flexibleItems = [NSMutableArray array];
         //numNonSpaceItems = 0;
