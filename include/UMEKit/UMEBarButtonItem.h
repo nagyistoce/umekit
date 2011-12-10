@@ -71,7 +71,6 @@ typedef enum {
 @property (nonatomic, retain) NSView *customView;
 @property (nonatomic) UMEBarButtonItemStyle style;            // default is UMEBarButtonItemStylePlain
 @property (nonatomic) CGFloat width;            // default is 0.0
-@property (nonatomic, getter=isEnabled) BOOL enabled;
 @property (nonatomic, assign) id target;
 @property (nonatomic) SEL action;
 @end
