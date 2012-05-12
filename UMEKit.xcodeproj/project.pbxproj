@@ -1021,10 +1021,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1042,7 +1039,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = build/Debug;
 				PRODUCT_NAME = UMEKit;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 				UMEKIT_FRAMEWORK_TARGET_PATH = "@executable_path/../Frameworks";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1052,10 +1049,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1071,7 +1066,8 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = build/Release;
 				PRODUCT_NAME = UMEKit;
-				SDKROOT = macosx10.5;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.6;
 				UMEKIT_FRAMEWORK_TARGET_PATH = "@executable_path/../Frameworks";
 				WRAPPER_EXTENSION = framework;
 			};
