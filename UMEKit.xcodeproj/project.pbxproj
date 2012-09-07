@@ -1021,7 +1021,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1039,7 +1038,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = build/Debug;
 				PRODUCT_NAME = UMEKit;
-				SDKROOT = macosx10.6;
 				UMEKIT_FRAMEWORK_TARGET_PATH = "@executable_path/../Frameworks";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1049,7 +1047,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1067,7 +1064,6 @@
 				INSTALL_PATH = build/Release;
 				PRODUCT_NAME = UMEKit;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx10.6;
 				UMEKIT_FRAMEWORK_TARGET_PATH = "@executable_path/../Frameworks";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1083,7 +1079,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -1095,7 +1090,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
