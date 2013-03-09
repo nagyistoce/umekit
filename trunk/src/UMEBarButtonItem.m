@@ -66,83 +66,83 @@
             imgPath = [b pathForImageResource:@""];
             break;
         case UMEBarButtonSystemItemCompose:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_compose"];
+            imgPath = @"barbutton_system_item_compose";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemReply:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_reply"];
+            imgPath = @"barbutton_system_item_reply";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemAction:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_action"];
+            imgPath = @"barbutton_system_item_action";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemOrganize:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_organize"];
+            imgPath = @"barbutton_system_item_organize";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemBookmarks:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_bookmarks"];
+            imgPath = @"barbutton_system_item_bookmarks";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemSearch:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_search"];
+            imgPath = @"barbutton_system_item_search";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemRefresh:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_refresh"];
+            imgPath = @"barbutton_system_item_refresh";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemStop:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_stop"];
+            imgPath = @"barbutton_system_item_stop";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemCamera:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_camera"];
+            imgPath = @"barbutton_system_item_camera";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemTrash:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_trash"];
+            imgPath = @"barbutton_system_item_trash";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemPlay:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_play"];
+            imgPath = @"barbutton_system_item_play";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemPause:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_pause"];
+            imgPath = @"barbutton_system_item_pause";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemRewind:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_rewind"];
+            imgPath = @"barbutton_system_item_rewind";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemFastForward:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_fastforward"];
+            imgPath = @"barbutton_system_item_fastforward";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemPrev:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_prev"];
+            imgPath = @"barbutton_system_item_prev";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemNext:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_next"];
+            imgPath = @"barbutton_system_item_next";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemUndo:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_reply"];
+            imgPath = @"barbutton_system_item_reply";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemRedo:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_redo"];
+            imgPath = @"barbutton_system_item_redo";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemUser:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_user"];
+            imgPath = @"barbutton_system_item_user";
             imgPos = NSImageOnly;
             break;
         case UMEBarButtonSystemItemEveryone:
-            imgPath = [b pathForImageResource:@"barbutton_system_item_everyone"];
+            imgPath = @"barbutton_system_item_everyone";
             imgPos = NSImageOnly;
             break;
         default:
@@ -155,7 +155,13 @@
     } else {
         self = [self initWithTitle:aTitle style:aStyle target:t action:sel];
         if ([imgPath length]) {
-            self.image = [[[NSImage alloc] initWithContentsOfFile:imgPath] autorelease];
+//            self.image = [[[NSImage alloc] initWithContentsOfFile:imgPath] autorelease];
+//            NSString *name = [[imgPath lastPathComponent] stringByDeletingPathExtension];
+            
+            NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+            NSURL *URL = [NSURL fileURLWithPath:[bundle pathForImageResource:imgPath]];
+            self.image = [[[NSImage alloc] initWithContentsOfURL:URL] autorelease];
+
         }
         [button setImagePosition:imgPos];
     }
