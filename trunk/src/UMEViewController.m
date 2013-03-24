@@ -16,6 +16,7 @@
 #import <UMEKit/UMENavigationController.h>
 #import <UMEKit/UMENavigationItem.h>
 #import <UMEKit/UMEBarButtonItem.h>
+#import <TDAppKit/TDUtils.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UMEFlippedView.h"
 
@@ -70,7 +71,7 @@
         [view autorelease];
 
     } else {
-        self.view = [[[UMEFlippedView alloc] initWithFrame:NSMakeRect(0, 0, MAXFLOAT, MAXFLOAT)] autorelease];
+        self.view = [[[UMEFlippedView alloc] initWithFrame:NSMakeRect(0, 0, TD_BIG_FLOAT, TD_BIG_FLOAT)] autorelease];
         [self.view setWantsLayer:NO];
     }
     
