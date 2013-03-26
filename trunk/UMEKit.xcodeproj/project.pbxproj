@@ -161,8 +161,6 @@
 		D3AB4B3A112B97B70091CE4B /* UMEToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AB4B38112B97B70091CE4B /* UMEToolbar.m */; };
 		D3AB4B42112B97CF0091CE4B /* UMEToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AB4B41112B97CF0091CE4B /* UMEToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3B3CD4417021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4317021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png */; };
-		D3B3CD4617021A2100A4BB7D /* barbuttonitem_default_plain_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4517021A2100A4BB7D /* barbuttonitem_default_plain_bg.png */; };
-		D3B3CD4817021A2C00A4BB7D /* barbuttonitem_default_done_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4717021A2C00A4BB7D /* barbuttonitem_default_done_bg.png */; };
 		D3B3CD4A17021A3400A4BB7D /* barbuttonitem_black_plain_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4917021A3400A4BB7D /* barbuttonitem_black_plain_bg.png */; };
 		D3C3B2181085620100ED4547 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3B20F108561CE00ED4547 /* MyRootViewController.m */; };
 		D3CF41D5109002EB0035F42A /* UMEBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF41D3109002EB0035F42A /* UMEBarItem.m */; };
@@ -999,8 +997,6 @@
 				D353451816EB0F1600A30EEF /* toolbar_bg_gray.png in Resources */,
 				D353451916EB0F1600A30EEF /* toolbar_bg_gray@2x.png in Resources */,
 				D3B3CD4417021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png in Resources */,
-				D3B3CD4617021A2100A4BB7D /* barbuttonitem_default_plain_bg.png in Resources */,
-				D3B3CD4817021A2C00A4BB7D /* barbuttonitem_default_done_bg.png in Resources */,
 				D3B3CD4A17021A3400A4BB7D /* barbuttonitem_black_plain_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
