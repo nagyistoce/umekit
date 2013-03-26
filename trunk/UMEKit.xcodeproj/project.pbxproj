@@ -160,6 +160,10 @@
 		D39BF5CC1088406400E399F3 /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39BF5CB1088406400E399F3 /* ThirdView.xib */; };
 		D3AB4B3A112B97B70091CE4B /* UMEToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AB4B38112B97B70091CE4B /* UMEToolbar.m */; };
 		D3AB4B42112B97CF0091CE4B /* UMEToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AB4B41112B97CF0091CE4B /* UMEToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3B3CD4417021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4317021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png */; };
+		D3B3CD4617021A2100A4BB7D /* barbuttonitem_default_plain_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4517021A2100A4BB7D /* barbuttonitem_default_plain_bg.png */; };
+		D3B3CD4817021A2C00A4BB7D /* barbuttonitem_default_done_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4717021A2C00A4BB7D /* barbuttonitem_default_done_bg.png */; };
+		D3B3CD4A17021A3400A4BB7D /* barbuttonitem_black_plain_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CD4917021A3400A4BB7D /* barbuttonitem_black_plain_bg.png */; };
 		D3C3B2181085620100ED4547 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3B20F108561CE00ED4547 /* MyRootViewController.m */; };
 		D3CF41D5109002EB0035F42A /* UMEBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF41D3109002EB0035F42A /* UMEBarItem.m */; };
 		D3CF41D71090076C0035F42A /* UMEBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D3CF41D61090076C0035F42A /* UMEBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -370,6 +374,10 @@
 		D39BF5CB1088406400E399F3 /* ThirdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ThirdView.xib; path = demoapp/ThirdView.xib; sourceTree = "<group>"; };
 		D3AB4B38112B97B70091CE4B /* UMEToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UMEToolbar.m; path = src/UMEToolbar.m; sourceTree = "<group>"; };
 		D3AB4B41112B97CF0091CE4B /* UMEToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UMEToolbar.h; path = include/UMEKit/UMEToolbar.h; sourceTree = "<group>"; };
+		D3B3CD4317021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barbuttonitem_gray_plain_bg.png; path = res/img/barbuttonitem_gray_plain_bg.png; sourceTree = "<group>"; };
+		D3B3CD4517021A2100A4BB7D /* barbuttonitem_default_plain_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barbuttonitem_default_plain_bg.png; path = res/img/barbuttonitem_default_plain_bg.png; sourceTree = "<group>"; };
+		D3B3CD4717021A2C00A4BB7D /* barbuttonitem_default_done_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barbuttonitem_default_done_bg.png; path = res/img/barbuttonitem_default_done_bg.png; sourceTree = "<group>"; };
+		D3B3CD4917021A3400A4BB7D /* barbuttonitem_black_plain_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barbuttonitem_black_plain_bg.png; path = res/img/barbuttonitem_black_plain_bg.png; sourceTree = "<group>"; };
 		D3C3B20E108561CE00ED4547 /* MyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyRootViewController.h; path = demoapp/MyRootViewController.h; sourceTree = "<group>"; };
 		D3C3B20F108561CE00ED4547 /* MyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyRootViewController.m; path = demoapp/MyRootViewController.m; sourceTree = "<group>"; };
 		D3CF41D3109002EB0035F42A /* UMEBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UMEBarItem.m; path = src/UMEBarItem.m; sourceTree = "<group>"; };
@@ -704,9 +712,13 @@
 				D353451616EB0F1600A30EEF /* toolbar_bg_gray.png */,
 				D353451716EB0F1600A30EEF /* toolbar_bg_gray@2x.png */,
 				D32870E811D8F4310073DE37 /* toolbar_bg_navy.png */,
+				D3B3CD4917021A3400A4BB7D /* barbuttonitem_black_plain_bg.png */,
 				D353450816EB0A5B00A30EEF /* barbuttonitem_black_plain_bg@2x.png */,
+				D3B3CD4717021A2C00A4BB7D /* barbuttonitem_default_done_bg.png */,
 				D353450916EB0A5B00A30EEF /* barbuttonitem_default_done_bg@2x.png */,
+				D3B3CD4517021A2100A4BB7D /* barbuttonitem_default_plain_bg.png */,
 				D353450A16EB0A5C00A30EEF /* barbuttonitem_default_plain_bg@2x.png */,
+				D3B3CD4317021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png */,
 				D353450B16EB0A5C00A30EEF /* barbuttonitem_gray_plain_bg@2x.png */,
 			);
 			name = Images;
@@ -986,6 +998,10 @@
 				D353451516EB0E3900A30EEF /* barbutton_system_item_next@2x.png in Resources */,
 				D353451816EB0F1600A30EEF /* toolbar_bg_gray.png in Resources */,
 				D353451916EB0F1600A30EEF /* toolbar_bg_gray@2x.png in Resources */,
+				D3B3CD4417021A0E00A4BB7D /* barbuttonitem_gray_plain_bg.png in Resources */,
+				D3B3CD4617021A2100A4BB7D /* barbuttonitem_default_plain_bg.png in Resources */,
+				D3B3CD4817021A2C00A4BB7D /* barbuttonitem_default_done_bg.png in Resources */,
+				D3B3CD4A17021A3400A4BB7D /* barbuttonitem_black_plain_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
