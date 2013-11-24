@@ -187,7 +187,7 @@
 - (id)initWithTitle:(NSString *)aTitle style:(UMEBarButtonItemStyle)aStyle target:(id)aTarget action:(SEL)sel {
     if (self = [super init]) {
         
-        if (CUSTOM_VIEW_FLAG == aStyle) {
+        if (CUSTOM_VIEW_FLAG == (NSUInteger)aStyle) {
             self.style = UMEBarButtonItemStylePlain;
         } else {
             self.button = [[[UMEBarButtonItemButton alloc] initWithFrame:NSZeroRect] autorelease];
@@ -201,7 +201,7 @@
         self.action = sel;
         self.barStyle = UMEBarStyleDefault;
         
-        if (CUSTOM_VIEW_FLAG != aStyle) {
+        if (CUSTOM_VIEW_FLAG != (NSUInteger)aStyle) {
             self.customView = [[[UMEFlippedView alloc] initWithFrame:NSZeroRect] autorelease];
         }
     }
